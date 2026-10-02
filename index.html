@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Who's DewZ Official</title>
+
+    <meta name="description"
+          content="Who's DewZ Official - Fonts, Viral Hashtags & Background Photos">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+                         "Segoe UI", sans-serif;
+            color: white;
+            overflow-x: hidden;
+            background:
+                radial-gradient(circle at 10% 10%, rgba(0, 140, 255, .35), transparent 30%),
+                radial-gradient(circle at 90% 20%, rgba(100, 50, 255, .30), transparent 30%),
+                radial-gradient(circle at 50% 90%, rgba(0, 200, 255, .20), transparent 35%),
+                #030712;
+        }
+
+        /* Animated background */
+        .background {
+            position: fixed;
+            inset: 0;
+            z-index: -10;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(70px);
+            opacity: .45;
+            animation: floatBlob 10s ease-in-out infinite alternate;
+        }
+
+        .blob.one {
+            width: 280px;
+            height: 280px;
+            background: #008cff;
+            top: 5%;
+            left: -70px;
+        }
+
+        .blob.two {
+            width: 320px;
+            height: 320px;
+            background: #693cff;
+            right: -100px;
+            top: 35%;
+            animation-delay: 2s;
+        }
+
+        .blob.three {
+            width: 250px;
+            height: 250px;
+            background: #00d9ff;
+            bottom: -70px;
+            left: 35%;
+            animation-delay: 4s;
+        }
+
+        @keyframes floatBlob {
+            from {
+                transform: translate(0, 0) scale(1);
+            }
+            to {
+                transform: translate(45px, -35px) scale(1.15);
+            }
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 15px;
+            z-index: 100;
+            width: min(1100px, calc(100% - 30px));
+            margin: 15px auto 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 14px 18px;
+
+            background: rgba(255, 255, 255, .08);
+            border: 1px solid rgba(255, 255, 255, .16);
